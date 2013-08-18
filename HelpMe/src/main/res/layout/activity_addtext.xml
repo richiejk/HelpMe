@@ -12,25 +12,18 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:padding="@dimen/activity_8dp"
             android:textSize="30sp"
-            android:text="dashboard"
+            android:text="add contact to be texted"
             android:textColor="@color/peter_river"
-            android:id="@+id/txt_dashboard_title"
+            android:id="@+id/txt_addcall_title"
             android:layout_gravity="left|center_vertical"/>
 
-    <GridView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/clouds"
-            android:id="@+id/gridView"
-            android:layout_gravity="left|center_vertical"
-            android:clickable="true"
-            android:numColumns="3"/>
-    <Button
-            android:background="@color/peter_river"
-            android:text="Start"
-            android:id="@+id/start_button"
-            android:layout_margin="@dimen/activity_8dp"
+    <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="@dimen/activity_8dp"
+            android:id="@+id/listView_contacts"
+            android:layout_gravity="left|center_vertical"/>
+
+
 </LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/ll_hold_base"
+              android:background="@color/clouds"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/holdButton"
+                android:src="@drawable/hold_green_1"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:padding="@dimen/activity_8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/activity_8dp"
+                android:background="@color/peter_river"
+                android:text="double tap for cancel"
+                android:layout_height="wrap_content"
+                android:id="@+id/tapButton"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

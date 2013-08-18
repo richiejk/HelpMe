@@ -1,6 +1,7 @@
 package com.android.helpme.adapters;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.helpme.HelpMeApplication;
 import com.android.helpme.R;
 import com.android.helpme.models.Item;
 
@@ -23,6 +25,7 @@ public class CustomGridViewAdapter extends ArrayAdapter<Item> {
     Context context;
     int layoutResourceId;
     ArrayList<Item> data = new ArrayList<Item>();
+    HelpMeApplication application;
 
     public CustomGridViewAdapter(Context context, int layoutResourceId,ArrayList<Item> data) {
         super(context, layoutResourceId, data);
@@ -33,6 +36,7 @@ public class CustomGridViewAdapter extends ArrayAdapter<Item> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        application=(HelpMeApplication)((Activity)context).getApplication();
         View row = convertView;
         RecordHolder holder = null;
 
@@ -48,7 +52,7 @@ public class CustomGridViewAdapter extends ArrayAdapter<Item> {
             holder = (RecordHolder) row.getTag();
         }
 
-        Typeface tf=Typeface.createFromAsset(getContext().getAssets(), "fonts/SegoeWP-Light.ttf");
+        Typeface tf=application.getTypeface();
 
         Item item = data.get(position);
         holder.txtTitle.setText(item.desc);

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="alizarin">#e74c3c</color>
     <color name="belize_hole">#2980b9</color>
     <color name="clouds">#ecf0f1</color>
+    <color name="dark_gray">#222222</color>
+    <color name="emerald">#2ecc71</color>
     <color name="peter_river">#3498db</color>
 
     <dimen name="activity_8dp">8dp</dimen>
