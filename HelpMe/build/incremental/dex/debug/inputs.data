@@ -1,0 +1,20 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1376818487484 345 d4f1f4ec2e092ee8d7ed2ab1f2a953a2edac2971 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\BuildConfig.class
+1376846657351 472 7a7d677cd64d198c42e59dc046e6d9f6aeb9bff3 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$string.class
+1376846657279 773 fc8a75746e43e0ec4a743d689fd63ca8797f85d6 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\HelpMeApplication.class
+1376846657349 679 8a61b808281bb19d0bb173f7a754194b1379bea5 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$drawable.class
+1376846657348 463 c09c88c959b234c5889d303127faedb2568a9bce C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$color.class
+1376830868325 2741 cdd598370ab723bcc617ed876357daad4b682b16 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\MainActivity.class
+1376846657348 497 3e711e08ff5bf746da1bb4d0c478ba3d6abc434f C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$dimen.class
+1376830463661 567 35c329117512048ef67dcf33cafe3a5fe278fe0b C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\adapters\CustomGridViewAdapter$RecordHolder.class
+1376830776320 3049 d846927b407275034ac5d727c8c668ddb714503f C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\adapters\CustomGridViewAdapter.class
+1376829796316 478 4f057daef52f3ebdda257e234e5a2ee381626e9b C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\models\Item.class
+1376846657349 773 3b4f77e83ba55ec3534c75c401580106e3c3dabe C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$id.class
+1376818391317 484258 bd6479f5dd592790607e0504e66e0f31c2b4d308 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\libs\android-support-v4.jar
+1376846657352 431 fb3766526169b4b907a7449f988933dd7556c5b4 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$style.class
+1376846657350 388 800251d0597690bd76d73c3a842a53408d7fa4cd C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$menu.class
+1376818487459 340 4bc9e76ac2ca6f16bf2630b0021f50b74968cea6 C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$attr.class
+1376846657352 725 1ae22c67ddd0f83493f2d8b0300847e6216fda7e C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R.class
+1376846657350 486 1929b467d9ae11b5671e2f53e97aad5760b66b9d C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\build\classes\debug\com\android\helpme\R$layout.class

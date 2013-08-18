@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets" >
+            <file
+                name="fonts/SegoeWP-Black.ttf"
+                path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\fonts\SegoeWP-Black.ttf" />
+            <file
+                name="fonts/SegoeWP-Light.ttf"
+                path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\fonts\SegoeWP-Light.ttf" />
+            <file
+                name="fonts/SegoeWP-Semilight.ttf"
+                path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\fonts\SegoeWP-Semilight.ttf" />
+            <file
+                name="fonts/SegoeWP-Semibold.ttf"
+                path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\fonts\SegoeWP-Semibold.ttf" />
+            <file
+                name="fonts/SegoeWP-Bold.ttf"
+                path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\fonts\SegoeWP-Bold.ttf" />
+            <file
+                name="fonts/SegoeWP.ttf"
+                path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\fonts\SegoeWP.ttf" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\debug\assets" />
+    </dataSet>
+
+</merger>
