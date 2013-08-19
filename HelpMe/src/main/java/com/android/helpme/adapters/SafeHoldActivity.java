@@ -82,8 +82,9 @@ public class SafeHoldActivity extends Activity {
 
                         public void onFinish() {
                             if(!isSafe){
+                                String uri = "tel:108";
                                 Intent intent = new Intent(Intent.ACTION_CALL);
-                                intent.setData(Uri.parse("tel:" + "911"));
+                                intent.setData(Uri.parse(uri));
                                 startActivity(intent);
                             }
 
