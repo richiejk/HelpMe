@@ -3,8 +3,10 @@ package com.android.helpme.adapters;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -17,11 +19,12 @@ import com.android.helpme.R;
 /**
  * Created by RjK on 8/18/13.
  */
-public class CustomDialogDesc extends Dialog implements View.OnClickListener {
+public class CustomDialogSettings extends Dialog implements View.OnClickListener {
 
     public Dialog d;
     int layoutId;
     public Button yes;
+    public Button back;
     Context context;
     TextView content;
     TextView title;
@@ -31,13 +34,15 @@ public class CustomDialogDesc extends Dialog implements View.OnClickListener {
     HelpMeApplication application;
 
 
-    public CustomDialogDesc(Context context) {
+    public CustomDialogSettings(Context context) {
         super(context);
         this.context=context;
     }
 
     @Override
     public void onClick(View view) {
+        Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+        context.startActivity(intent);
         dismiss();
     }
 
@@ -55,9 +60,16 @@ public class CustomDialogDesc extends Dialog implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.item_desc_dialog);
+        setContentView(R.layout.item_desc_settings);
         yes = (Button) findViewById(R.id.desc_done);
         yes.setOnClickListener(this);
+        back=(Button)findViewById(R.id.desc_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
         application=(HelpMeApplication)((Activity)context).getApplication();
         title=(TextView)findViewById(R.id.desc_title);
         content=(TextView)findViewById(R.id.desc_content);

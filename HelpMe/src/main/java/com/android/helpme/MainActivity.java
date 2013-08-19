@@ -6,14 +6,17 @@ import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.app.Activity;
+import android.text.Html;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.helpme.adapters.CustomDialogDesc;
 import com.android.helpme.adapters.CustomGridViewAdapter;
 import com.android.helpme.data.HelpMeDBHandler;
 import com.android.helpme.models.ContactModel;
@@ -28,6 +31,7 @@ public class MainActivity extends Activity {
     HelpMeApplication application;
     Button startButton;
     HelpMeDBHandler dbHandler;
+    CustomDialogDesc dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +76,22 @@ public class MainActivity extends Activity {
                         break;
                     case 2:intent=new Intent(MainActivity.this,SOSActivity.class);
                         startActivity(intent);break;
-                    case 3:break;
-                    case 4:break;
+                    case 3:intent=new Intent(MainActivity.this,SettingsActivity.class);
+                        startActivity(intent);break;
+                    case 4:
+                        dialog=new CustomDialogDesc(MainActivity.this);
+                        dialog.setMessage(Html.fromHtml(getResources().getString(R.string.hello_world)).toString());
+                        dialog.setTitle("Readme");
+
+                        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+                        lp.copyFrom(dialog.getWindow().getAttributes());
+                        lp.width = WindowManager.LayoutParams.FILL_PARENT;
+                        lp.height = WindowManager.LayoutParams.FILL_PARENT;
+                        dialog.show();
+                        dialog.getWindow().setAttributes(lp);
+                        dialog.show();
+
+                        break;
                     case 5: finish();
                         break;
                 }

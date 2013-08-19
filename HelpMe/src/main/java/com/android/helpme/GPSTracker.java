@@ -15,7 +15,11 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
+import android.text.Html;
 import android.util.Log;
+import android.view.WindowManager;
+
+import com.android.helpme.adapters.CustomDialogSettings;
 
 public class GPSTracker extends Service implements LocationListener {
 
@@ -155,31 +159,19 @@ public class GPSTracker extends Service implements LocationListener {
      * On pressing Settings button will lauch Settings Options
      * */
     public void showSettingsAlert(){
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(mContext);
 
-        // Setting Dialog Title
-        alertDialog.setTitle("GPS is settings");
+        CustomDialogSettings dialog=new CustomDialogSettings(mContext);
+        dialog.setMessage("GPS is not enabled. Do you want to go to settings menu?");
+        dialog.setTitle("GPS not enabled");
 
-        // Setting Dialog Message
-        alertDialog.setMessage("GPS is not enabled. Do you want to go to settings menu?");
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.FILL_PARENT;
+        //lp.height = WindowManager.LayoutParams.FILL_PARENT;
+        dialog.show();
+        dialog.getWindow().setAttributes(lp);
+        dialog.show();
 
-        // On pressing Settings button
-        alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog,int which) {
-                Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                mContext.startActivity(intent);
-            }
-        });
-
-        // on pressing cancel button
-        alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-
-        // Showing Alert Message
-        alertDialog.show();
     }
 
     @Override

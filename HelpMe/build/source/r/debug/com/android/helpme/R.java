@@ -38,25 +38,31 @@ public final class R {
         public static final int ic_launcher=0x7f020008;
         public static final int settings=0x7f020009;
         public static final int sos=0x7f02000a;
-        public static final int tb_blue=0x7f02000b;
-        public static final int text=0x7f02000c;
-        public static final int user=0x7f02000d;
-        public static final int usercall=0x7f02000e;
-        public static final int whitebg_curved=0x7f02000f;
+        public static final int splash=0x7f02000b;
+        public static final int tb_blue=0x7f02000c;
+        public static final int text=0x7f02000d;
+        public static final int user=0x7f02000e;
+        public static final int usercall=0x7f02000f;
+        public static final int whitebg_curved=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0021;
+        public static final int action_settings=0x7f0a002a;
         public static final int button_call_1_submit=0x7f0a0003;
-        public static final int desc_content=0x7f0a0020;
-        public static final int desc_done=0x7f0a001f;
-        public static final int desc_title=0x7f0a001e;
+        public static final int button_settings_save=0x7f0a0019;
+        public static final int desc_back=0x7f0a0028;
+        public static final int desc_content=0x7f0a0027;
+        public static final int desc_done=0x7f0a0026;
+        public static final int desc_title=0x7f0a0025;
+        public static final int draw=0x7f0a0029;
         public static final int editText_call_primary_number=0x7f0a0007;
         public static final int editText_call_secondary_number=0x7f0a000a;
+        public static final int editText_settings_message_value=0x7f0a001e;
+        public static final int editText_settings_seconds_value=0x7f0a001c;
         public static final int gridView=0x7f0a000f;
         public static final int holdButton=0x7f0a0017;
         public static final int imageButton_call_primary_number=0x7f0a0008;
         public static final int imageButton_call_secondary_number=0x7f0a000b;
-        public static final int img_dashboard_icon=0x7f0a001c;
+        public static final int img_dashboard_icon=0x7f0a0023;
         public static final int linearLayout=0x7f0a0006;
         public static final int linearLayout2=0x7f0a0011;
         public static final int linearLayout3=0x7f0a0012;
@@ -67,7 +73,7 @@ public final class R {
         public static final int ll_hold_base=0x7f0a0016;
         public static final int scrollView=0x7f0a0002;
         public static final int start_button=0x7f0a0010;
-        public static final int stopBtn=0x7f0a0019;
+        public static final int stopBtn=0x7f0a0020;
         public static final int tapButton=0x7f0a0018;
         public static final int textView=0x7f0a0005;
         public static final int textView2=0x7f0a0009;
@@ -75,10 +81,14 @@ public final class R {
         public static final int txt_addcall_title=0x7f0a0000;
         public static final int txt_addtext_1_title=0x7f0a000d;
         public static final int txt_call_note=0x7f0a000c;
-        public static final int txt_contacts_list_name=0x7f0a001a;
-        public static final int txt_contacts_list_number=0x7f0a001b;
-        public static final int txt_dashboard_icon=0x7f0a001d;
+        public static final int txt_contacts_list_name=0x7f0a0021;
+        public static final int txt_contacts_list_number=0x7f0a0022;
+        public static final int txt_dashboard_icon=0x7f0a0024;
         public static final int txt_dashboard_title=0x7f0a000e;
+        public static final int txt_settings_message_title=0x7f0a001d;
+        public static final int txt_settings_note=0x7f0a001f;
+        public static final int txt_settings_seconds_title=0x7f0a001b;
+        public static final int txt_settings_title=0x7f0a001a;
     }
     public static final class layout {
         public static final int activity_addcall=0x7f030000;
@@ -88,10 +98,13 @@ public final class R {
         public static final int activity_landing=0x7f030004;
         public static final int activity_main=0x7f030005;
         public static final int activity_safehold=0x7f030006;
-        public static final int activity_sos_1=0x7f030007;
-        public static final int item_contacts_list=0x7f030008;
-        public static final int item_dashboard_icon=0x7f030009;
-        public static final int item_desc_dialog=0x7f03000a;
+        public static final int activity_settings=0x7f030007;
+        public static final int activity_sos_1=0x7f030008;
+        public static final int item_contacts_list=0x7f030009;
+        public static final int item_dashboard_icon=0x7f03000a;
+        public static final int item_desc_dialog=0x7f03000b;
+        public static final int item_desc_settings=0x7f03000c;
+        public static final int splash=0x7f03000d;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -101,7 +114,8 @@ public final class R {
         public static final int app_name=0x7f070001;
         public static final int hello_world=0x7f070002;
         public static final int note_for_call=0x7f070003;
-        public static final int note_for_text=0x7f070004;
+        public static final int note_for_settings=0x7f070004;
+        public static final int note_for_text=0x7f070005;
     }
     public static final class style {
         /** 

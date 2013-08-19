@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name" >HelpMe
+    <string name="app_name" >HelpMe!
     </string>
     <string name="action_settings" >Settings
     </string>
-    <string name="hello_world" >Hello world!
+    <string name="hello_world" ><Data><![CDATA[
+       <p>The Help Me application is a handy app for cases when personal security is an issue. Imagine when walking down a dark alley that looks unsafe, how can you call for help in the case of an emergency without endangering your life? Using HelpMe application it\'s simple. In such cases, start the app and keep holding on the large "HOLD" button till you are somewhere safe. In the chance of some emergency situation, all you have to do is take your hand off the button and within 5 seconds a call is made to a set contact as well as a message, sent to your primary contact with your gps coordinates</p>
+       <p><b>Step-1</b><br/> Ensure GPS is on.</p>
+       <p><b>Step-2</b><br/> Select the primary number to be called in the case of an emergency</p>
+       <p><b>Step-3</b><br/> Select the primary number (and/or secondary) to be texted in the case of an emergency</p>
+       <p><b>Step-4</b><br/> Click the START Button</p>
+       <p><b>Step-5</b><br/> Hold the "HOLD" button and release when the emergency numbers are to be contacted. To stop the application, double tap on the Cancel button</p>]]></Data>
     </string>
     <string name="note_for_call">Note: If the safe button is not double tapped within 5-seconds of release of the PUSH button, a call is made to this number</string>
     <string name="note_for_text">Note: If the safe button is not double tapped within 5-seconds of release of the PUSH button, a text is sent to the set numbers with the GPS Location (if available) of the user</string>
+    <string name="note_for_settings">Note: Please enable gps connectivity (if not already done) to use all the features of the app</string>
 
 </resources>

@@ -25,25 +25,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-xhdpi/blue_browse.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/assets/sounds/sound.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-xhdpi/tb_blue.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallFirstActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextFirstActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/models/ContactModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/common/Finals.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/data/HelpMeDBHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SOSActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addmessage_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_sos_1.xml" />
-      <change type="MOVED" beforePath="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\java\com\android\helpme\adapters\SafeHoldActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-xhdpi/splash.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogSettings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SplashActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/splash.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/ic_launcher-web.png" afterPath="$PROJECT_DIR$/HelpMe/src/main/ic_launcher-web.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/drawable-xxhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/drawable-xxhdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogDesc.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogDesc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/data/HelpMeDBHandler.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/data/HelpMeDBHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/MainActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/source/r/debug/com/android/helpme/R.java" afterPath="$PROJECT_DIR$/HelpMe/build/source/r/debug/com/android/helpme/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SettingsActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SettingsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_dialog.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_dialog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -51,20 +56,20 @@
     <ignored path="HelpMe.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/build.gradle" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376818601505" ignored="false" />
-    <file path="/fragment.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376934475153" ignored="false" />
-    <file path="/Dummy.txt" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376920835980" ignored="false" />
+    <file path="/fragment.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376943348868" ignored="false" />
+    <file path="/Dummy.txt" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376936753104" ignored="false" />
     <file path="/item_dashboard_icon.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376830153150" ignored="false" />
     <file path="/dimens.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376824587970" ignored="false" />
     <file path="/colors.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376857390213" ignored="false" />
     <file path="/activity_main.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376828400894" ignored="false" />
-    <file path="/MainActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376935501476" ignored="false" />
+    <file path="/MainActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376940990538" ignored="false" />
     <file path="/CustomGridViewAdapter.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376848176250" ignored="false" />
     <file path="/activity_landing.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376851914957" ignored="false" />
     <file path="/HelpMeApplication.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376832234647" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376931872463" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376944245111" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376847068190" ignored="false" />
-    <file path="/CustomDialogDesc.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376847933558" ignored="false" />
-    <file path="/item_desc_dialog.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376848385749" ignored="false" />
+    <file path="/CustomDialogDesc.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376941372711" ignored="false" />
+    <file path="/item_desc_dialog.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376941460926" ignored="false" />
     <file path="/AddCallActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376928550224" ignored="false" />
     <file path="/activity_addcall.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376851364944" ignored="false" />
     <file path="/item_contacts_list.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376851247366" ignored="false" />
@@ -72,19 +77,26 @@
     <file path="/activity_addtext.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376851611579" ignored="false" />
     <file path="/AddTextActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376936464164" ignored="false" />
     <file path="/activity_safehold.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376855281817" ignored="false" />
-    <file path="/SafeHoldActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376936028707" ignored="false" />
+    <file path="/SafeHoldActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376939679450" ignored="false" />
     <file path="/Finals.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376924934257" ignored="false" />
     <file path="/activity_addcall_1.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376935785805" ignored="false" />
-    <file path="/strings.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376934579314" ignored="false" />
+    <file path="/strings.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376941420985" ignored="false" />
     <file path="/AddCallFirstActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376928492219" ignored="false" />
     <file path="/ContactModel.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376924804936" ignored="false" />
-    <file path="/HelpMeDBHandler.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376934905941" ignored="false" />
+    <file path="/HelpMeDBHandler.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376938146599" ignored="false" />
     <file path="/SOSActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376936685706" ignored="false" />
     <file path="/activity_sos.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376932200316" ignored="false" />
     <file path="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_addmessage_1.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376932231000" ignored="false" />
     <file path="/activity_sos_1.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376932359379" ignored="false" />
     <file path="/AddTextFirstActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376934763324" ignored="false" />
     <file path="/activity_addmessage_1.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376934625511" ignored="false" />
+    <file path="/activity_settings.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376940209738" ignored="false" />
+    <file path="/SettingsActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376940099839" ignored="false" />
+    <file path="/SplashActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376942889231" ignored="false" />
+    <file path="/splash.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376944155828" ignored="false" />
+    <file path="/item_desc_settings.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376943641148" ignored="false" />
+    <file path="/CustomDialogSettings.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376944523679" ignored="false" />
+    <file path="/GPSTracker.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376944414469" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,118 +157,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddTextActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java">
+      <file leaf-file-name="GPSTracker.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="5" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0">
+            <state line="175" column="0" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#2597#3224#0" expanded="true" />
-                <element signature="e#3213#3214#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCallActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java">
+      <file leaf-file-name="CustomDialogSettings.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="37" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
+            <state line="45" column="18" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1692#1838#0" expanded="true" />
+                <element signature="e#1827#1828#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="item_desc_dialog.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_dialog.xml">
+          <provider editor-type-id="text-editor">
+            <state line="12" column="46" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SOSActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SOSActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="44" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.45412844">
-              <folding>
-                <element signature="e#1054#1235#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_addmessage_1.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addmessage_1.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="47" selection-start="422" selection-end="422" vertical-scroll-proportion="-5.16">
-              <folding>
-                <element signature="e#5242#5265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/values/strings.xml">
+      <file leaf-file-name="colors.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/values/colors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="156" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="8" column="12" selection-start="325" selection-end="325" vertical-scroll-proportion="0.2357019">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/MainActivity.java">
+      <file leaf-file-name="CustomDialogDesc.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogDesc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="42" selection-start="3898" selection-end="3898" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#3187#3941#0" expanded="true" />
-                <element signature="e#3930#3931#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddTextFirstActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextFirstActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="31" selection-start="2221" selection-end="2221" vertical-scroll-proportion="-18.08">
+            <state line="46" column="0" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelpMeDBHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/data/HelpMeDBHandler.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="9" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.0">
+            <state line="20" column="65" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1471#1485#0" expanded="true" />
+                <element signature="e#1186#1204#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SafeHoldActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java">
+      <file leaf-file-name="SplashActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SplashActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="38" selection-start="4142" selection-end="4142" vertical-scroll-proportion="-17.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3635#4272#0" expanded="true" />
-                <element signature="e#4261#4262#0" expanded="true" />
-                <element signature="e#4314#6854#0" expanded="true" />
-                <element signature="e#6843#6844#0" expanded="true" />
-                <element signature="e#7300#8653#0" expanded="true" />
-                <element signature="e#8642#8643#0" expanded="true" />
-                <element signature="e#8754#9394#0" expanded="true" />
-                <element signature="e#9383#9384#0" expanded="true" />
-              </folding>
+            <state line="17" column="36" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_addcall_1.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall_1.xml">
+      <file leaf-file-name="splash.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/splash.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="35" selection-start="5333" selection-end="5333" vertical-scroll-proportion="-18.92">
+            <state line="15" column="17" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.2">
               <folding />
             </state>
           </provider>
@@ -283,22 +260,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallFirstActivity.java" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_sos.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_sos.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_sos_1.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addmessage_1.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextFirstActivity.java" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/data/HelpMeDBHandler.java" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/MainActivity.java" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall_1.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SOSActivity.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/data/HelpMeDBHandler.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_settings.xml" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/MainActivity.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogDesc.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_dialog.xml" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_settings.xml" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/splash.xml" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogSettings.java" />
       </list>
     </option>
   </component>
@@ -470,7 +447,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="drawable-xxhdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -500,7 +477,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemId" value="drawable-mdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -526,147 +503,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelpMe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapters" />
+              <option name="myItemId" value="drawable-hdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -757,14 +598,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.android.helpme" />
       <recent name="com.android.helpme.adapters" />
+      <recent name="com.android.helpme" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\layout" />
-      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\sounds" />
+      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main" />
+      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res" />
+      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\drawable-xxhdpi" />
       <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\drawable-xhdpi" />
-      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\assets\fonts" />
+      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\drawable-mdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\layout" />
@@ -934,7 +776,7 @@
       <workItem from="1376819137241" duration="8222000" />
       <workItem from="1376846230174" duration="1076000" />
       <workItem from="1376847716730" duration="10624000" />
-      <workItem from="1376920817620" duration="14708000" />
+      <workItem from="1376920817620" duration="23069000" />
     </task>
     <task id="LOCAL-00001" summary="new rep">
       <created>1376847096306</created>
@@ -944,20 +786,24 @@
       <created>1376858447649</created>
       <updated>1376858447649</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="part-3">
+      <created>1376936856273</created>
+      <updated>1376936856273</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35271000" />
+    <option name="totallyTimeSpent" value="43632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19797225" sideWeight="0.6714922" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19850586" sideWeight="0.6714922" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19477054" sideWeight="0.6714922" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3301282" sideWeight="0.6703786" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3301282" sideWeight="0.6714922" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -970,8 +816,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14034152" sideWeight="0.3975501" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1398079" sideWeight="0.6714922" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32850778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1022,7 +868,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="part-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="part-3" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1038,107 +884,63 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="new rep" />
     <MESSAGE value="part-1" />
+    <MESSAGE value="part-3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/models/ContactModel.java">
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+        <state line="29" column="17" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallFirstActivity.java">
+    <entry file="file://$PROJECT_DIR$/HelpMe/build/res/all/debug/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="25" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1510#1824#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1865#2177#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2214#2999#0" expanded="true" />
-            <element signature="e#2988#2989#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/item_contacts_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="29" column="45" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.6753472">
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_sos_1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="760" selection-end="767" vertical-scroll-proportion="-11.56">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="50" selection-start="2411" selection-end="2411" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5283#5548#0" expanded="true" />
-            <element signature="e#5537#5538#0" expanded="true" />
-            <element signature="e#5637#5802#0" expanded="true" />
-            <element signature="e#5791#5792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="47" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1056#1074#0" expanded="true" />
-            <element signature="e#1180#1198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="42" selection-start="3898" selection-end="3898" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3187#3941#0" expanded="true" />
-            <element signature="e#3930#3931#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="156" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+        <state line="3" column="36" selection-start="88" selection-end="88" vertical-scroll-proportion="-2.04">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addmessage_1.xml">
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="422" selection-end="422" vertical-scroll-proportion="-5.16">
+        <state line="82" column="0" selection-start="3269" selection-end="3891" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#5242#5265#0" expanded="true" />
+            <element signature="e#4158#4912#0" expanded="true" />
+            <element signature="e#4901#4902#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="38" selection-start="2575" selection-end="2584" vertical-scroll-proportion="-20.28">
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall_1.xml">
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="35" selection-start="5333" selection-end="5333" vertical-scroll-proportion="-18.92">
+        <state line="17" column="36" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.2">
           <folding />
         </state>
       </provider>
@@ -1146,64 +948,55 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java">
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="38" selection-start="4142" selection-end="4142" vertical-scroll-proportion="-17.0">
+        <state line="20" column="65" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3635#4272#0" expanded="true" />
-            <element signature="e#4261#4262#0" expanded="true" />
-            <element signature="e#4314#6854#0" expanded="true" />
-            <element signature="e#6843#6844#0" expanded="true" />
-            <element signature="e#7300#8653#0" expanded="true" />
-            <element signature="e#8642#8643#0" expanded="true" />
-            <element signature="e#8754#9394#0" expanded="true" />
-            <element signature="e#9383#9384#0" expanded="true" />
+            <element signature="e#1186#1204#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextFirstActivity.java">
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/GPSTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="31" selection-start="2221" selection-end="2221" vertical-scroll-proportion="-18.08">
+        <state line="175" column="0" selection-start="5582" selection-end="5582" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_dialog.xml">
+      <provider editor-type-id="text-editor">
+        <state line="12" column="46" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/data/HelpMeDBHandler.java">
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/adapters/CustomDialogSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="9" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.0">
+        <state line="45" column="18" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1471#1485#0" expanded="true" />
+            <element signature="e#1692#1838#0" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java">
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="5" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2597#3224#0" expanded="true" />
-            <element signature="e#3213#3214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="37" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
+        <state line="8" column="12" selection-start="325" selection-end="325" vertical-scroll-proportion="0.2357019">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SOSActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="44" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.45412844">
-          <folding>
-            <element signature="e#1054#1235#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

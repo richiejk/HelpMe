@@ -21,6 +21,7 @@ public class HelpMeDBHandler {
     SQLiteDatabase db;
     final static String TABLE_CALL_NUMBER="tblUserToBeCalled";
     final static String TABLE_TEXT_NUMBER="tblUserToBeTexted";
+    final static String TABLE_SETTINGS="tblSettings";
 
     private static class tblUserToBeCalled{
         final static String NUMBER="number";
@@ -33,6 +34,12 @@ public class HelpMeDBHandler {
         final static String NUMBER="number";
         final static String NAME="name";
         final static String PRIORITY="priority";
+        final static String ID="_id";
+    }
+
+    private static class tblSettings{
+        final static String VALUE="value";
+        final static String NAME="name";
         final static String ID="_id";
     }
 
@@ -115,8 +122,51 @@ public class HelpMeDBHandler {
         }else{
             db.insert(TABLE_TEXT_NUMBER,null,values);
         }
+    }
 
+    public void addSettings(String seconds,String text){
+        Cursor cursor=null;
 
+        db.delete(TABLE_SETTINGS,null,null);
+
+        ContentValues values=new ContentValues();
+        values.put(tblSettings.NAME,"seconds");
+        values.put(tblSettings.VALUE,seconds);
+
+            db.insert(TABLE_SETTINGS,null,values);
+
+        ContentValues values2=new ContentValues();
+        values2.put(tblSettings.NAME,"message");
+        values2.put(tblSettings.VALUE,text);
+
+            db.insert(TABLE_SETTINGS,null,values2);
+
+    }
+
+    public String fetchSeconds(){
+        String value="";
+        Cursor cursor=null;
+        String selectQuery="SELECT "+tblSettings.VALUE+" FROM "+TABLE_SETTINGS+" WHERE "+tblSettings.NAME+" LIKE 'seconds'";
+        cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                value=cursor.getString(0);
+            }while (cursor.moveToNext());
+        }
+        return  value;
+    }
+
+    public String fetchMessage(){
+        String value="";
+        Cursor cursor=null;
+        String selectQuery="SELECT "+tblSettings.VALUE+" FROM "+TABLE_SETTINGS+" WHERE "+tblSettings.NAME+" LIKE 'message'";
+        cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                value=cursor.getString(0);
+            }while (cursor.moveToNext());
+        }
+        return  value;
     }
 
     public class SQLiteHelper extends SQLiteOpenHelper {
@@ -137,6 +187,9 @@ public class HelpMeDBHandler {
 
             String selectQueryText = "CREATE  TABLE \""+TABLE_TEXT_NUMBER+"\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE ,  \"number\" TEXT NOT NULL, \"name\" TEXT, \"priority\" INTEGER NOT NULL  )";
             sqLiteDatabase.execSQL(selectQueryText);
+
+            String selectQueryText3 = "CREATE  TABLE \""+TABLE_SETTINGS+"\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE ,  \"value\" TEXT NOT NULL, \"name\" TEXT)";
+            sqLiteDatabase.execSQL(selectQueryText3);
             // Create TIPS table
         }
 

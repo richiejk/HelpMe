@@ -5,7 +5,7 @@
                 android:padding="@dimen/activity_horizontal_margin"
                 android:layout_width="match_parent"
                 android:background="#fff"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
@@ -19,14 +19,13 @@
                 android:textSize="24sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Test Date and Time"
+                android:text="Please Enable GPS"
                 android:id="@+id/desc_title"/>
     </LinearLayout>
     <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/scrollView"
-            android:layout_above="@+id/desc_done"
             android:layout_below="@+id/linearLayout">
         <RelativeLayout
                 android:orientation="vertical"
@@ -54,12 +53,29 @@
 
         </RelativeLayout>
     </ScrollView>
-    <Button
-            android:background="@color/peter_river"
+    <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Done"
+            android:layout_alignParentBottom="true">
+    <Button
+            android:background="@color/peter_river"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/desc_back"
+            android:layout_alignParentBottom="true"
+            />
+    <Button
+            android:background="@color/peter_river"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/activity_8dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Go to settings"
             android:id="@+id/desc_done"
             android:layout_alignParentBottom="true"
             />
+    </LinearLayout>
 </RelativeLayout>

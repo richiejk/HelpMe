@@ -44,6 +44,8 @@ public class SafeHoldActivity extends Activity {
     String numberToBeCalled;
     String smsNumber;
     String smsNumber2="false";
+    long seconds;
+    String message;
     HelpMeDBHandler dbHandler;
     boolean released=true;
     double lat,lon;
@@ -99,6 +101,17 @@ public class SafeHoldActivity extends Activity {
             smsNumber2=dbHandler.fetchContact(false,2).toString();
         }
 
+        seconds=5000;
+        if(dbHandler.fetchSeconds()!=null&&dbHandler.fetchSeconds().trim().length()!=0){
+            seconds=(Long.parseLong(dbHandler.fetchSeconds()))*1000;
+        }
+
+        message="I think I may be in trouble, Please Help! ";
+
+        if(dbHandler.fetchMessage()!=null&&dbHandler.fetchMessage().trim().length()!=0){
+            message=dbHandler.fetchMessage();
+        }
+
         holdButton=(ImageButton)findViewById(R.id.holdButton);
         holdButton.setImageDrawable(getResources().getDrawable(R.drawable.hold_green_1));
         backgroundLayout=(LinearLayout)findViewById(R.id.ll_hold_base);
@@ -133,7 +146,7 @@ public class SafeHoldActivity extends Activity {
                     released=false;
                     holdButton.setImageDrawable(getResources().getDrawable(R.drawable.hold_red_1));
                     backgroundLayout.setBackgroundColor(getResources().getColor(R.color.alizarin));
-                    timer= new CountDownTimer(5000, 1000) {
+                    timer= new CountDownTimer(seconds, 1000) {
 
                         public void onTick(long millisUntilFinished) {
 
@@ -147,15 +160,15 @@ public class SafeHoldActivity extends Activity {
                                     lon=gpsTracker.getLongitude();
                                 }
                                 if(lat!=0){
-                                    sendSMS(smsNumber,"I think I may be in trouble, Please Help! I'm at Latitude=>"+lat+" and Longitude=>"+lon);
+                                    sendSMS(smsNumber,message+" I'm at Latitude=>"+lat+" and Longitude=>"+lon);
                                     if(!smsNumber2.equals("false")){
-                                        sendSMS(smsNumber,"I think I may be in trouble, Please Help! I'm at Latitude=>"+lat+" and Longitude=>"+lon);
+                                        sendSMS(smsNumber,message+" I'm at Latitude=>"+lat+" and Longitude=>"+lon);
                                     }
                                 }
                                 else{
-                                    sendSMS(smsNumber,"I think I may be in trouble, Please Help!");
+                                    sendSMS(smsNumber,message);
                                     if(!smsNumber2.equals("false")){
-                                        sendSMS(smsNumber,"I think I may be in trouble, Please Help!");
+                                        sendSMS(smsNumber,message);
                                     }
                                 }
                                 String uri = "tel:"+numberToBeCalled;
