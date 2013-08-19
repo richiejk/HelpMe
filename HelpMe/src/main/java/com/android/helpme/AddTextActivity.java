@@ -14,6 +14,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.helpme.adapters.ContactsAdapter;
+import com.android.helpme.common.Finals;
+import com.android.helpme.data.HelpMeDBHandler;
+import com.android.helpme.models.ContactModel;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -26,42 +29,28 @@ public class AddTextActivity extends Activity {
     ArrayList<String> names;
     Hashtable<String,String> numberForName;
     HelpMeApplication application;
+    HelpMeDBHandler dbHandler;
+    int priority;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_addtext);
         application=(HelpMeApplication)getApplication();
+        priority=(getIntent().getExtras().getString(Finals.INTENT_PRIMARY).equals("true"))?1:0;
 
     }
 
     @Override
     protected void onResume(){
         super.onResume();
+        dbHandler=new HelpMeDBHandler(this);
         TextView title=(TextView)findViewById(R.id.txt_addcall_title);
         title.setTypeface(application.getTypeface());
         getContacts();
         fillList();
-        switchOnGPS();
     }
 
-    void switchOnGPS(){
-            Intent intent = new Intent("android.location.GPS_ENABLED_CHANGE");
-            intent.putExtra("enabled", true);
-            this.sendBroadcast(intent);
-
-            String provider = Settings.Secure.getString(getContentResolver(), Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
-            if(!provider.contains("gps"))
-            {
-                //if gps is disabled
-                final Intent poke = new Intent();
-                poke.setClassName("com.android.settings", "com.android.settings.widget.SettingsAppWidgetProvider");
-                poke.addCategory(Intent.CATEGORY_ALTERNATIVE);
-                poke.setData(Uri.parse("3"));
-                this.sendBroadcast(poke);
-            }
-
-    }
 
     void getContacts(){
         names=new ArrayList<String>();
@@ -85,6 +74,15 @@ public class AddTextActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String selName=names.get(i);
+                String selNumber=numberForName.get(selName);
+                ContactModel temp=new ContactModel(selNumber,selName,priority);
+                if(priority==1){
+                    dbHandler.deleteTextTablePrimary();
+                }else{
+                    dbHandler.deleteTextTableSecondary();
+                }
+                dbHandler.addContact(false,temp);
                 finish();
             }
         });

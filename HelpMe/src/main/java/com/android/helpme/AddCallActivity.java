@@ -11,6 +11,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.helpme.adapters.ContactsAdapter;
+import com.android.helpme.common.Finals;
+import com.android.helpme.data.HelpMeDBHandler;
+import com.android.helpme.models.ContactModel;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -23,12 +26,16 @@ public class AddCallActivity extends Activity {
     ArrayList<String> names;
     Hashtable<String,String> numberForName;
     HelpMeApplication application;
+    HelpMeDBHandler dbHandler;
+    int priority;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_addcall);
         application=(HelpMeApplication)getApplication();
+        dbHandler=new HelpMeDBHandler(this);
+        priority=(getIntent().getExtras().getString(Finals.INTENT_PRIMARY).equals("true"))?1:0;
 
     }
 
@@ -63,6 +70,15 @@ public class AddCallActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String selName=names.get(i);
+                String selNumber=numberForName.get(selName);
+                ContactModel temp=new ContactModel(selNumber,selName,priority);
+                if(priority==1){
+                    dbHandler.deleteCallTablePrimary();
+                }else{
+                    dbHandler.deleteCallTableSecondary();
+                }
+                dbHandler.addContact(true,temp);
                 finish();
             }
         });
@@ -70,179 +86,9 @@ public class AddCallActivity extends Activity {
 }
 
 /*
-package com.android.helpme.data;
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-
-import com.android.helpme.common.Finals;
-import com.android.helpme.models.ContactModel;
-
-import java.util.ArrayList;
-
-/**
- * Created by richie on 8/19/13.
- */
-public class HelpMeDBHandler {
-        SQLiteHelper helper;
-        Context context;
-        SQLiteDatabase db;
-        final static String TABLE_CALL_NUMBER="tblUserToBeCalled";
-        final static String TABLE_TEXT_NUMBER="tblUserToBeTexted";
-
-    private static class tblUserToBeCalled{
-        final static String NUMBER="number";
-        final static String NAME="name";
-        final static String PRIORITY="priority";
-        final static String ID="_id";
-    }
-
-    private static class tblUserToBeTexted{
-        final static String NUMBER="number";
-        final static String NAME="name";
-        final static String PRIORITY="priority";
-        final static String ID="_id";
-    }
-
-
-    public HelpMeDBHandler(Context context) {
-        this.context = context;
-        this.helper=new SQLiteHelper(context, Finals.DATABASE_NAME,null,Finals.DB_VERSION);
-        this.db=this.helper.getWritableDatabase();
-    }
-
-    public ArrayList<ContactModel> fetchContacts(boolean isForCall){
-        String selectQuery="";
-        ArrayList<ContactModel> list=new ArrayList<ContactModel>();
-        Cursor cursor=null;
-        if(isForCall){
-            selectQuery="SELECT "+tblUserToBeCalled.ID+" , "+tblUserToBeCalled.NAME+" , "+tblUserToBeCalled.NUMBER+" , "+tblUserToBeCalled.PRIORITY+" FROM "+TABLE_CALL_NUMBER;
-        }else{
-            selectQuery="SELECT "+tblUserToBeTexted.ID+" , "+tblUserToBeTexted.NAME+" , "+tblUserToBeTexted.NUMBER+" , "+tblUserToBeTexted.PRIORITY+" FROM "+TABLE_TEXT_NUMBER;
-        }
-        cursor = db.rawQuery(selectQuery, null);
-        if (cursor.moveToFirst()) {
-            do {
-                    list.add(new ContactModel(cursor.getString(2),cursor.getString(1),cursor.getInt(3)));
-            }while (cursor.moveToNext());
-        }
-        return  list;
-    }
-
-    public ContactModel fetchContact(boolean isForCall,int priority){
-        String selectQuery="";
-        ContactModel contact=null;
-        Cursor cursor=null;
-        if(isForCall){
-            selectQuery="SELECT "+tblUserToBeCalled.ID+" , "+tblUserToBeCalled.NAME+" , "+tblUserToBeCalled.NUMBER+" , "+tblUserToBeCalled.PRIORITY+" FROM "+TABLE_CALL_NUMBER+" WHERE "+tblUserToBeCalled.PRIORITY+" ="+priority;
-        }else{
-            selectQuery="SELECT "+tblUserToBeTexted.ID+" , "+tblUserToBeTexted.NAME+" , "+tblUserToBeTexted.NUMBER+" , "+tblUserToBeTexted.PRIORITY+" FROM "+TABLE_TEXT_NUMBER+" WHERE "+tblUserToBeCalled.PRIORITY+" ="+priority;
-        }
-        cursor = db.rawQuery(selectQuery, null);
-        if (cursor.moveToFirst()) {
-            do {
-                contact=new ContactModel(cursor.getString(2),cursor.getString(1),cursor.getInt(3));
-            }while (cursor.moveToNext());
-        }
-        return  contact;
-    }
-
-    public void addContact(boolean isForCall,ArrayList<ContactModel> contactModels){
-           Cursor cursor=null;
-            ContentValues values=new ContentValues();
-            for(ContactModel temp:contactModels){
-                values.put(tblUserToBeCalled.NAME,temp.getName());
-                values.put(tblUserToBeCalled.NUMBER,temp.getPhone());
-                values.put(tblUserToBeCalled.PRIORITY,temp.getPriority());
-            }
-
-            if(isForCall){
-                db.insert(TABLE_CALL_NUMBER,null,values);
-            }else{
-                db.insert(TABLE_TEXT_NUMBER,null,values);
-            }
-
-
-    }
-
-        public class SQLiteHelper extends SQLiteOpenHelper {
-
-            //Context context;
-            public SQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-                super(context, name, factory, version);
-            }
-
-
-
-
-            @Override
-            public void onCreate(SQLiteDatabase sqLiteDatabase) {
-                Cursor cursor = null;
-                String selectQueryCall = "CREATE  TABLE \""+TABLE_CALL_NUMBER+"\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE ,  \"number\" TEXT NOT NULL, \"name\" TEXT, \"priority\" INTEGER NOT NULL  )";
-                sqLiteDatabase.execSQL(selectQueryCall);
-
-                String selectQueryText = "CREATE  TABLE \""+TABLE_TEXT_NUMBER+"\" (\"_id\" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE ,  \"number\" TEXT NOT NULL, \"name\" TEXT, \"priority\" INTEGER NOT NULL  )";
-                sqLiteDatabase.execSQL(selectQueryText);
-                // Create TIPS table
-            }
-
-            @Override
-            public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
-
-            }
-        }
-    }
 
 
 */
 /*
-package com.android.helpme.models;
 
-/**
- * Created by richie on 8/19/13.
- */
-public class ContactModel {
-
-    public ContactModel(String phone, String name, int priority) {
-        this.phone = phone;
-        this.name = name;
-        this.priority = priority;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getName() {
-        if(name==null){
-            return "unnamed";
-        }else{
-            return name;
-        }
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPriority() {
-        return priority;
-    }
-
-    public void setPriority(int priority) {
-        this.priority = priority;
-    }
-
-    String phone;
-    String name;
-    int priority;
-}
 */

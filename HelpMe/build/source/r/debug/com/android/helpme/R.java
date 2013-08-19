@@ -8,79 +8,100 @@
 package com.android.helpme;
 
 public final class R {
+    public static final class anim {
+        public static final int slide_up_left_alt=0x7f040000;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int alizarin=0x7f040000;
-        public static final int belize_hole=0x7f040001;
-        public static final int clouds=0x7f040002;
-        public static final int dark_gray=0x7f040003;
-        public static final int emerald=0x7f040004;
-        public static final int peter_river=0x7f040005;
+        public static final int alizarin=0x7f050000;
+        public static final int belize_hole=0x7f050001;
+        public static final int clouds=0x7f050002;
+        public static final int dark_gray=0x7f050003;
+        public static final int emerald=0x7f050004;
+        public static final int peter_river=0x7f050005;
     }
     public static final class dimen {
-        public static final int activity_8dp=0x7f050000;
-        public static final int activity_horizontal_margin=0x7f050001;
-        public static final int activity_vertical_margin=0x7f050002;
+        public static final int activity_8dp=0x7f060000;
+        public static final int activity_horizontal_margin=0x7f060001;
+        public static final int activity_vertical_margin=0x7f060002;
     }
     public static final class drawable {
-        public static final int exit=0x7f020000;
-        public static final int help=0x7f020001;
-        public static final int helpsos=0x7f020002;
-        public static final int hold_green=0x7f020003;
-        public static final int hold_green_1=0x7f020004;
-        public static final int hold_red=0x7f020005;
-        public static final int hold_red_1=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int settings=0x7f020008;
-        public static final int sos=0x7f020009;
-        public static final int text=0x7f02000a;
-        public static final int user=0x7f02000b;
-        public static final int usercall=0x7f02000c;
-        public static final int whitebg_curved=0x7f02000d;
+        public static final int blue_browse=0x7f020000;
+        public static final int exit=0x7f020001;
+        public static final int help=0x7f020002;
+        public static final int helpsos=0x7f020003;
+        public static final int hold_green=0x7f020004;
+        public static final int hold_green_1=0x7f020005;
+        public static final int hold_red=0x7f020006;
+        public static final int hold_red_1=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int settings=0x7f020009;
+        public static final int sos=0x7f02000a;
+        public static final int tb_blue=0x7f02000b;
+        public static final int text=0x7f02000c;
+        public static final int user=0x7f02000d;
+        public static final int usercall=0x7f02000e;
+        public static final int whitebg_curved=0x7f02000f;
     }
     public static final class id {
-        public static final int action_settings=0x7f090016;
-        public static final int desc_content=0x7f090015;
-        public static final int desc_done=0x7f090014;
-        public static final int desc_title=0x7f090012;
-        public static final int gridView=0x7f090003;
-        public static final int holdButton=0x7f09000c;
-        public static final int img_dashboard_icon=0x7f090010;
-        public static final int linearLayout=0x7f090005;
-        public static final int linearLayout2=0x7f090006;
-        public static final int linearLayout3=0x7f090007;
-        public static final int linearLayout4=0x7f090008;
-        public static final int linearLayout5=0x7f090009;
-        public static final int linearLayout6=0x7f09000a;
-        public static final int listView_contacts=0x7f090001;
-        public static final int ll_hold_base=0x7f09000b;
-        public static final int scrollView=0x7f090013;
-        public static final int start_button=0x7f090004;
-        public static final int tapButton=0x7f09000d;
-        public static final int txt_addcall_title=0x7f090000;
-        public static final int txt_contacts_list_name=0x7f09000e;
-        public static final int txt_contacts_list_number=0x7f09000f;
-        public static final int txt_dashboard_icon=0x7f090011;
-        public static final int txt_dashboard_title=0x7f090002;
+        public static final int action_settings=0x7f0a0021;
+        public static final int button_call_1_submit=0x7f0a0003;
+        public static final int desc_content=0x7f0a0020;
+        public static final int desc_done=0x7f0a001f;
+        public static final int desc_title=0x7f0a001e;
+        public static final int editText_call_primary_number=0x7f0a0007;
+        public static final int editText_call_secondary_number=0x7f0a000a;
+        public static final int gridView=0x7f0a000f;
+        public static final int holdButton=0x7f0a0017;
+        public static final int imageButton_call_primary_number=0x7f0a0008;
+        public static final int imageButton_call_secondary_number=0x7f0a000b;
+        public static final int img_dashboard_icon=0x7f0a001c;
+        public static final int linearLayout=0x7f0a0006;
+        public static final int linearLayout2=0x7f0a0011;
+        public static final int linearLayout3=0x7f0a0012;
+        public static final int linearLayout4=0x7f0a0013;
+        public static final int linearLayout5=0x7f0a0014;
+        public static final int linearLayout6=0x7f0a0015;
+        public static final int listView_contacts=0x7f0a0001;
+        public static final int ll_hold_base=0x7f0a0016;
+        public static final int scrollView=0x7f0a0002;
+        public static final int start_button=0x7f0a0010;
+        public static final int stopBtn=0x7f0a0019;
+        public static final int tapButton=0x7f0a0018;
+        public static final int textView=0x7f0a0005;
+        public static final int textView2=0x7f0a0009;
+        public static final int txt_addcall_1_title=0x7f0a0004;
+        public static final int txt_addcall_title=0x7f0a0000;
+        public static final int txt_addtext_1_title=0x7f0a000d;
+        public static final int txt_call_note=0x7f0a000c;
+        public static final int txt_contacts_list_name=0x7f0a001a;
+        public static final int txt_contacts_list_number=0x7f0a001b;
+        public static final int txt_dashboard_icon=0x7f0a001d;
+        public static final int txt_dashboard_title=0x7f0a000e;
     }
     public static final class layout {
         public static final int activity_addcall=0x7f030000;
-        public static final int activity_addtext=0x7f030001;
-        public static final int activity_landing=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_safehold=0x7f030004;
-        public static final int item_contacts_list=0x7f030005;
-        public static final int item_dashboard_icon=0x7f030006;
-        public static final int item_desc_dialog=0x7f030007;
+        public static final int activity_addcall_1=0x7f030001;
+        public static final int activity_addmessage_1=0x7f030002;
+        public static final int activity_addtext=0x7f030003;
+        public static final int activity_landing=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int activity_safehold=0x7f030006;
+        public static final int activity_sos_1=0x7f030007;
+        public static final int item_contacts_list=0x7f030008;
+        public static final int item_dashboard_icon=0x7f030009;
+        public static final int item_desc_dialog=0x7f03000a;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060000;
-        public static final int app_name=0x7f060001;
-        public static final int hello_world=0x7f060002;
+        public static final int action_settings=0x7f070000;
+        public static final int app_name=0x7f070001;
+        public static final int hello_world=0x7f070002;
+        public static final int note_for_call=0x7f070003;
+        public static final int note_for_text=0x7f070004;
     }
     public static final class style {
         /** 
@@ -89,9 +110,9 @@ public final class R {
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }

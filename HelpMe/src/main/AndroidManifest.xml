@@ -14,6 +14,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -33,7 +35,10 @@
         <activity android:name=".AddTextActivity"/>
         <activity android:name=".AddCallActivity"/>
         <activity android:name=".SettingsActivity"/>
-        <activity android:name=".adapters.SafeHoldActivity"/>
+        <activity android:name=".SafeHoldActivity"/>
+        <activity android:name=".AddCallFirstActivity"/>
+        <activity android:name=".AddTextFirstActivity"/>
+        <activity android:name=".SOSActivity"/>
     </application>
 
 </manifest>

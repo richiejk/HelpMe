@@ -1,6 +1,5 @@
 package com.android.helpme;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,7 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.helpme.adapters.CustomGridViewAdapter;
-import com.android.helpme.adapters.SafeHoldActivity;
+import com.android.helpme.data.HelpMeDBHandler;
+import com.android.helpme.models.ContactModel;
 import com.android.helpme.models.Item;
 
 import java.util.ArrayList;
@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
     CustomGridViewAdapter customGridAdapter;
     HelpMeApplication application;
     Button startButton;
+    HelpMeDBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +39,21 @@ public class MainActivity extends Activity {
     }
 
     TextView title;
-
+    ArrayList<ContactModel> contactsForCall;
+    ArrayList<ContactModel> contactsForText;
     @Override
     protected void onResume(){
         super.onResume();
         addToGridArray();
+        dbHandler=new HelpMeDBHandler(this);
+        contactsForCall=new ArrayList<ContactModel>();
+        contactsForText=new ArrayList<ContactModel>();
+        contactsForCall=dbHandler.fetchContacts(false);
+        contactsForText=dbHandler.fetchContacts(false);
+        GPSTracker gpsTracker=new GPSTracker(this);
+        if(!gpsTracker.canGetLocation()){
+            gpsTracker.showSettingsAlert();
+        }
         startButton=(Button)findViewById(R.id.start_button);
         startButton.setTypeface(application.getTypeface());
         gridView = (GridView) findViewById(R.id.gridView);
@@ -53,13 +64,14 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent;
                 switch(i){
-                    case 0:intent=new Intent(MainActivity.this,AddCallActivity.class);
+                    case 0:intent=new Intent(MainActivity.this,AddCallFirstActivity.class);
                         startActivity(intent);
                             break;
-                    case 1: intent=new Intent(MainActivity.this,AddTextActivity.class);
+                    case 1: intent=new Intent(MainActivity.this,AddTextFirstActivity.class);
                         startActivity(intent);
                         break;
-                    case 2:break;
+                    case 2:intent=new Intent(MainActivity.this,SOSActivity.class);
+                        startActivity(intent);break;
                     case 3:break;
                     case 4:break;
                     case 5: finish();
@@ -71,8 +83,16 @@ public class MainActivity extends Activity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, SafeHoldActivity.class);
-                startActivity(intent);
+                if(contactsForCall.size()==0){
+                    Toast.makeText(MainActivity.this,"Please select atleast one number to be called in case of emergency by clicking on Icon-1",Toast.LENGTH_SHORT).show();
+                }
+                else if(contactsForText.size()==0){
+                    Toast.makeText(MainActivity.this,"Please select atleast one number to be texted in case of emergency by clicking on Icon-2",Toast.LENGTH_SHORT).show();
+                }else{
+                    Intent intent=new Intent(MainActivity.this, SafeHoldActivity.class);
+                    startActivity(intent);
+                }
+
             }
         });
         title=(TextView)findViewById(R.id.txt_dashboard_title);
