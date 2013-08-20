@@ -7,9 +7,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.Settings;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,6 +33,8 @@ public class AddTextActivity extends Activity {
     ArrayList<String> names;
     Hashtable<String,String> numberForName;
     HelpMeApplication application;
+    ArrayList<String> filteredNames;
+    EditText searchKeyword;
     HelpMeDBHandler dbHandler;
     int priority;
 
@@ -48,8 +53,38 @@ public class AddTextActivity extends Activity {
         dbHandler=new HelpMeDBHandler(this);
         TextView title=(TextView)findViewById(R.id.txt_addcall_title);
         title.setTypeface(application.getTypeface());
+        searchKeyword=(EditText)findViewById(R.id.editText_searchKey);
+        searchKeyword.setTypeface(application.getTypeface());
         getContacts();
-        fillList();
+        fillList(names);
+        searchKeyword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence editable, int i, int i2, int i3) {
+                if(editable.toString().trim().length()!=0){
+                    filteredNames=new ArrayList<String>();
+                    for(String temp:names){
+                        if(temp.toUpperCase().contains(editable.toString().toUpperCase())){
+                            filteredNames.add(temp);
+                        }
+                    }
+                    fillList(filteredNames);
+                }else{
+                    fillList(names);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+
     }
 
 
@@ -67,7 +102,9 @@ public class AddTextActivity extends Activity {
     }
     ListView listView;
     ContactsAdapter adapter;
-    void fillList(){
+
+
+    void fillList(final ArrayList<String> names){
         listView=(ListView)findViewById(R.id.listView_contacts);
         if(names!=null&&names.size()!=0){
             adapter=new ContactsAdapter(this,R.id.txt_contacts_list_name,names,numberForName,application.getTypeface());

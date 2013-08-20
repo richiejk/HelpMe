@@ -16,6 +16,19 @@
             android:textColor="@color/peter_river"
             android:id="@+id/txt_addcall_title"
             android:layout_gravity="left|center_vertical"/>
+    <EditText
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:background="@drawable/tb_blue"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_8dp"
+            android:textSize="16sp"
+            android:textColor="@color/peter_river"
+            android:hint="search"
+            android:layout_marginLeft="@dimen/activity_8dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:id="@+id/editText_searchKey"
+            android:layout_gravity="left|center_vertical"/>
 
     <ListView
             android:layout_width="match_parent"
