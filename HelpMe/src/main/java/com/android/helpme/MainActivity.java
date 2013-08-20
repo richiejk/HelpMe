@@ -95,7 +95,7 @@ public class MainActivity extends Activity {
                     case 5: finish();
                         break;
                 }
-                Toast.makeText(MainActivity.this,i+"",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,i+"",Toast.LENGTH_SHORT).show();
             }
         });
         startButton.setOnClickListener(new View.OnClickListener() {
