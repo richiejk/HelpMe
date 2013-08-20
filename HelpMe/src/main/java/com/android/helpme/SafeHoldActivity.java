@@ -11,9 +11,11 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.provider.CalendarContract;
 import android.telephony.SmsManager;
 import android.util.Log;
@@ -49,6 +51,10 @@ public class SafeHoldActivity extends Activity {
     HelpMeDBHandler dbHandler;
     boolean released=true;
     double lat,lon;
+    ConnectivityManager connectivityManager;
+
+
+
     private void _getLocation() {
         // Get the location manager
         LocationManager locationManager = (LocationManager)
@@ -95,10 +101,10 @@ public class SafeHoldActivity extends Activity {
         isSafe=true;
         gpsTracker=new GPSTracker(this);
         dbHandler=new HelpMeDBHandler(this);
-        numberToBeCalled=dbHandler.fetchContact(true,1).toString();
-        smsNumber=dbHandler.fetchContact(false,1).toString();
+        numberToBeCalled=dbHandler.fetchContact(true,1).getPhone();
+        smsNumber=dbHandler.fetchContact(false,1).getPhone();
         if(dbHandler.fetchContact(false,2)!=null){
-            smsNumber2=dbHandler.fetchContact(false,2).toString();
+            smsNumber2=dbHandler.fetchContact(false,2).getPhone();
         }
 
         seconds=5000;
@@ -155,26 +161,47 @@ public class SafeHoldActivity extends Activity {
                         public void onFinish() {
                             if(!isSafe){
                                 isSafe=true;
-                                if(gpsTracker.canGetLocation()){
-                                    lat=gpsTracker.getLatitude();
-                                    lon=gpsTracker.getLongitude();
-                                }
-                                if(lat!=0){
-                                    sendSMS(smsNumber,message+" I'm at Latitude=>"+lat+" and Longitude=>"+lon);
-                                    if(!smsNumber2.equals("false")){
-                                        sendSMS(smsNumber,message+" I'm at Latitude=>"+lat+" and Longitude=>"+lon);
+
+                                connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+                                if (connectivityManager != null && connectivityManager.getActiveNetworkInfo() != null)
+                                {
+                                    if(gpsTracker.canGetLocation()){
+                                        lat=gpsTracker.getLatitude();
+                                        lon=gpsTracker.getLongitude();
                                     }
-                                }
-                                else{
-                                    sendSMS(smsNumber,message);
-                                    if(!smsNumber2.equals("false")){
+                                    if(lat!=0){
+                                        sendSMS(smsNumber,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
+                                        if(!smsNumber2.equals("false")){
+                                            sendSMS(smsNumber,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
+                                        }
+                                    }
+                                    else{
                                         sendSMS(smsNumber,message);
+                                        if(!smsNumber2.equals("false")){
+                                            sendSMS(smsNumber,message);
+                                        }
                                     }
+                                    final String uri = "tel:"+numberToBeCalled;
+                                    //Toast.makeText(SafeHoldActivity.this,uri,Toast.LENGTH_LONG).show();
+
+                                    Handler handler=new Handler();
+                                    handler.postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Intent intent = new Intent(Intent.ACTION_CALL);
+                                            intent.setData(Uri.parse(uri));
+                                            startActivity(intent);
+                                        }
+                                    },5000);
                                 }
-                                String uri = "tel:"+numberToBeCalled;
-                                Intent intent = new Intent(Intent.ACTION_CALL);
-                                intent.setData(Uri.parse(uri));
-                                startActivity(intent);
+                                else
+                                {
+                                    final String altUri = "tel:911";
+                                    Intent intent = new Intent(Intent.ACTION_CALL);
+                                    intent.setData(Uri.parse(altUri));
+                                    startActivity(intent);
+                                }
+
                             }
 
                         }
