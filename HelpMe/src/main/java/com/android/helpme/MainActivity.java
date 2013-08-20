@@ -55,8 +55,10 @@ public class MainActivity extends Activity {
         contactsForCall=dbHandler.fetchContacts(false);
         contactsForText=dbHandler.fetchContacts(false);
         GPSTracker gpsTracker=new GPSTracker(this);
-        if(!gpsTracker.canGetLocation()){
+        if(!gpsTracker.isGPSEnabled){
             gpsTracker.showSettingsAlert();
+        }else{
+            gpsTracker.getLocation();
         }
         startButton=(Button)findViewById(R.id.start_button);
         startButton.setTypeface(application.getTypeface());
