@@ -16,6 +16,7 @@ import com.android.helpme.data.HelpMeDBHandler;
 import com.android.helpme.models.ContactModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Hashtable;
 
 /**
@@ -55,6 +56,7 @@ public class AddCallActivity extends Activity {
         while (phones.moveToNext())
         {
             names.add(phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME)));
+            Collections.sort(names);
             numberForName.put(phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME)),phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER)));
         }
         phones.close();

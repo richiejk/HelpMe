@@ -15,6 +15,7 @@
         android:layout_margin="@dimen/activity_8dp"
         android:background="@color/peter_river"
         android:text="stop"
+        android:textSize="22sp"
         android:id="@+id/stopBtn"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

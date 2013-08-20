@@ -21,6 +21,8 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:columnWidth="130dp"
+            android:stretchMode="spacingWidthUniform"
             android:background="@color/clouds"
             android:id="@+id/gridView"
             android:layout_gravity="left|center_vertical"

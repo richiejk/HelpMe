@@ -16,7 +16,10 @@
     <string name="app_name">HelpMe!</string>
     <string name="hello_world"><Data>
 <![CDATA[
-       <p>The Help Me application is a handy app for cases when personal security is an issue. Imagine when walking down a dark alley that looks unsafe, how can you call for help in the case of an emergency without endangering your life? Using HelpMe application it\'s simple. In such cases, start the app and keep holding on the large "HOLD" button till you are somewhere safe. In the chance of some emergency situation, all you have to do is take your hand off the button and within 5 seconds a call is made to a set contact as well as a message, sent to your primary contact with your gps coordinates</p>
+       <p>HelpMe! is a handy app for cases when personal security is an issue. Imagine when walking down a dark alley that looks unsafe, how can you call for help in the case of an emergency without endangering your life? Using HelpMe application it\'s simple. In such cases, start the app and keep holding on the large "HOLD" button till you are somewhere safe. In the chance of some emergency situation, all you have to do is take your hand off the button and within 5 seconds a call is made to a set contact as well as a message, sent to your primary contact with your gps coordinates</p>
+       <p>HelpMe! also provides an anti-theft feature-if your phone is stolen or lost, just send an SMS to your number with the keyword set in settings(default value is "HELPME_START") and the phone\'s location will be sent as SMS to the number saved for receiving texts! Awesome, right?</p>
+
+       <br/>
        <p><b>Step-1</b><br/> Ensure GPS is on.</p>
        <p><b>Step-2</b><br/> Select the primary number to be called in the case of an emergency</p>
        <p><b>Step-3</b><br/> Select the primary number (and/or secondary) to be texted in the case of an emergency</p>

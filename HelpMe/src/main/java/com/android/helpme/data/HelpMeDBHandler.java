@@ -124,7 +124,7 @@ public class HelpMeDBHandler {
         }
     }
 
-    public void addSettings(String seconds,String text){
+    public void addSettings(String seconds,String text,String keyword){
         Cursor cursor=null;
 
         db.delete(TABLE_SETTINGS,null,null);
@@ -140,6 +140,12 @@ public class HelpMeDBHandler {
         values2.put(tblSettings.VALUE,text);
 
             db.insert(TABLE_SETTINGS,null,values2);
+
+        ContentValues values3=new ContentValues();
+        values3.put(tblSettings.NAME,"keyword");
+        values3.put(tblSettings.VALUE,keyword);
+
+        db.insert(TABLE_SETTINGS,null,values3);
 
     }
 
@@ -168,6 +174,20 @@ public class HelpMeDBHandler {
         }
         return  value;
     }
+
+    public String fetchKeyword(){
+        String value="";
+        Cursor cursor=null;
+        String selectQuery="SELECT "+tblSettings.VALUE+" FROM "+TABLE_SETTINGS+" WHERE "+tblSettings.NAME+" LIKE 'keyword'";
+        cursor = db.rawQuery(selectQuery, null);
+        if (cursor.moveToFirst()) {
+            do {
+                value=cursor.getString(0);
+            }while (cursor.moveToNext());
+        }
+        return  value;
+    }
+
 
     public class SQLiteHelper extends SQLiteOpenHelper {
 

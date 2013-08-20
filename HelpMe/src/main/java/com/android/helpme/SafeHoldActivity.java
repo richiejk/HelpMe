@@ -45,7 +45,7 @@ public class SafeHoldActivity extends Activity {
     LinearLayout backgroundLayout;
     int pressed=0;
     String numberToBeCalled;
-    String smsNumber;
+    String smsNumber="false";
     String smsNumber2="false";
     long seconds;
     String message;
@@ -103,7 +103,10 @@ public class SafeHoldActivity extends Activity {
         gpsTracker=new GPSTracker(this);
         dbHandler=new HelpMeDBHandler(this);
         numberToBeCalled=dbHandler.fetchContact(true,1).getPhone();
-        smsNumber=dbHandler.fetchContact(false,1).getPhone();
+        if(dbHandler.fetchContact(false,1)!=null){
+            smsNumber=dbHandler.fetchContact(false,1).getPhone();
+        }
+
         if(dbHandler.fetchContact(false,2)!=null){
             smsNumber2=dbHandler.fetchContact(false,2).getPhone();
         }
@@ -174,15 +177,19 @@ public class SafeHoldActivity extends Activity {
                                         lon=gpsTracker.getLongitude();
                                     }
                                     if(lat!=0){
+                                        if(!smsNumber.equals("false")){
                                         sendSMS(smsNumber,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
+                                        }
                                         if(!smsNumber2.equals("false")){
-                                            sendSMS(smsNumber,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
+                                            sendSMS(smsNumber2,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
                                         }
                                     }
                                     else{
+                                        if(!smsNumber.equals("false")){
                                         sendSMS(smsNumber,message);
+                                        }
                                         if(!smsNumber2.equals("false")){
-                                            sendSMS(smsNumber,message);
+                                            sendSMS(smsNumber2,message);
                                         }
                                     }
                                     final String uri = "tel:"+numberToBeCalled;

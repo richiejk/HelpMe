@@ -31,6 +31,7 @@
     <TextView
             android:layout_marginTop="@dimen/activity_8dp"
             android:layout_width="wrap_content"
+            android:textSize="16sp"
             android:layout_height="wrap_content"
             android:textColor="@color/dark_gray"
             android:text="number of seconds after which call has to be made after releasing the HOLD button"
@@ -68,6 +69,7 @@
             android:layout_width="wrap_content"
             android:textColor="@color/dark_gray"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
             android:text="message to be sent as sms to assigned contact in case of emergency"
             android:layout_marginRight="@dimen/activity_8dp"
             android:layout_marginLeft="@dimen/activity_8dp"
@@ -96,16 +98,41 @@
                 android:id="@+id/editText_settings_message_value"
                 android:layout_gravity="left|center_vertical"/>
 
-        ImageButton
-                android:layout_weight="0.1"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:paddingRight="@dimen/activity_8dp"
-                android:paddingLeft="@dimen/activity_8dp"
-                android:background="@drawable/blue_browse"
-                android:id="@+id/imageButton_call_secondary_number"/>
     </LinearLayout>
 
+        <TextView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="keyword to be sent in the SMS, in the event that the phone is lost in order to activate anti-theft features"
+                android:layout_marginRight="@dimen/activity_8dp"
+                android:layout_marginLeft="@dimen/activity_8dp"
+                android:id="@+id/txt_settings_keywords_title"
+                android:layout_gravity="left|center_vertical"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginRight="@dimen/activity_8dp"
+                android:layout_marginLeft="@dimen/activity_8dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/peter_river"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:background="@drawable/tb_blue"
+                    android:ems="10"
+                    android:id="@+id/editText_settings_keywords_value"
+                    android:layout_gravity="left|center_vertical"/>
+
+        </LinearLayout>
     <TextView
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_horizontal_margin"
@@ -113,6 +140,7 @@
             android:paddingBottom="@dimen/activity_horizontal_margin"
             android:textColor="@color/belize_hole"
             android:layout_marginLeft="@dimen/activity_8dp"
+            android:textSize="16sp"
             android:layout_marginRight="@dimen/activity_8dp"
             android:layout_height="wrap_content"
             android:text="@string/note_for_settings"
@@ -126,6 +154,7 @@
             android:layout_width="match_parent"
             android:layout_margin="@dimen/activity_8dp"
             android:background="@color/peter_river"
+            android:textSize="22sp"
             android:layout_height="wrap_content"
             android:text="Save"
             android:id="@+id/button_settings_save"
