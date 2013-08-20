@@ -18,6 +18,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.provider.CalendarContract;
 import android.telephony.SmsManager;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -162,10 +163,13 @@ public class SafeHoldActivity extends Activity {
                             if(!isSafe){
                                 isSafe=true;
 
-                                connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
-                                if (connectivityManager != null && connectivityManager.getActiveNetworkInfo() != null)
-                                {
-                                    if(gpsTracker.canGetLocation()){
+                                if(!isMobileAvailable(SafeHoldActivity.this)){
+                                    final String uri2 = "tel:911";
+                                    Intent intent = new Intent(Intent.ACTION_CALL);
+                                    intent.setData(Uri.parse(uri2));
+                                    startActivity(intent);
+                                }else{
+                                if(gpsTracker.canGetLocation()){
                                         lat=gpsTracker.getLatitude();
                                         lon=gpsTracker.getLongitude();
                                     }
@@ -193,15 +197,8 @@ public class SafeHoldActivity extends Activity {
                                             startActivity(intent);
                                         }
                                     },5000);
-                                }
-                                else
-                                {
-                                    final String altUri = "tel:911";
-                                    Intent intent = new Intent(Intent.ACTION_CALL);
-                                    intent.setData(Uri.parse(altUri));
-                                    startActivity(intent);
-                                }
 
+                            }
                             }
 
                         }
@@ -274,5 +271,11 @@ public class SafeHoldActivity extends Activity {
 
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(phoneNumber, null, message, sentPI, deliveredPI);
+    }
+
+    public static Boolean isMobileAvailable(Context appcontext) {
+        TelephonyManager tel = (TelephonyManager) appcontext.getSystemService(Context.TELEPHONY_SERVICE);
+        boolean hasNetwork = tel.getNetworkType() != android.telephony.TelephonyManager.NETWORK_TYPE_UNKNOWN;
+        return hasNetwork;
     }
 }
