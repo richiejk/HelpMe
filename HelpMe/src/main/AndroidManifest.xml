@@ -35,7 +35,7 @@
         <activity android:name=".AddTextActivity" android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".AddCallActivity" android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".SettingsActivity" android:windowSoftInputMode="stateHidden"/>
-        <activity android:name=".SafeHoldActivity"/>
+        <activity android:name=".SafeHoldActivity" android:screenOrientation="portrait"/>
         <activity android:name=".AddCallFirstActivity" android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".AddTextFirstActivity" android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".SOSActivity"/>
