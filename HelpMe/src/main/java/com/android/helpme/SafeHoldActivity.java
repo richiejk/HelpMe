@@ -126,6 +126,7 @@ public class SafeHoldActivity extends Activity {
         holdButton.setImageDrawable(getResources().getDrawable(R.drawable.hold_green_1));
         backgroundLayout=(LinearLayout)findViewById(R.id.ll_hold_base);
         tapButton=(Button)findViewById(R.id.tapButton);
+        tapButton.setVisibility(View.INVISIBLE);
         backgroundLayout.setBackgroundColor(getResources().getColor(R.color.clouds));
         tapButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -133,9 +134,12 @@ public class SafeHoldActivity extends Activity {
                 if(motionEvent.getAction()==MotionEvent.ACTION_DOWN){
                     ++pressed;
                     if(pressed==2){
+                        holdButton.setVisibility(View.VISIBLE);
+                        tapButton.setVisibility(View.INVISIBLE);
                         holdButton.setImageDrawable(getResources().getDrawable(R.drawable.hold_green_1));
                         backgroundLayout.setBackgroundColor(getResources().getColor(R.color.clouds));
                         released=true;
+                        timer.cancel();
                         isSafe=true;
                     }
                 }
@@ -143,6 +147,7 @@ public class SafeHoldActivity extends Activity {
             }
         });
 
+        holdButton.setVisibility(View.VISIBLE);
         holdButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -154,8 +159,10 @@ public class SafeHoldActivity extends Activity {
                 }else if(motionEvent.getAction()==MotionEvent.ACTION_UP){
                     isSafe=false;
                     released=false;
-                    holdButton.setImageDrawable(getResources().getDrawable(R.drawable.hold_red_1));
+                   // holdButton.setImageDrawable(getResources().getDrawable(R.drawable.hold_red_1));
+                    holdButton.setVisibility(View.INVISIBLE);
                     backgroundLayout.setBackgroundColor(getResources().getColor(R.color.alizarin));
+                    tapButton.setVisibility(View.VISIBLE);
                     timer= new CountDownTimer(seconds, 1000) {
 
                         public void onTick(long millisUntilFinished) {
