@@ -25,8 +25,6 @@ public class SimpleSmsReciever extends BroadcastReceiver {
     private static final String TAG = "Message recieved";
     GPSTracker gpsTracker;
     double lat,lon;
-    String smsNumber;
-    String smsNumber2="false";
     HelpMeDBHandler dbHandler;
     String message;
     Context context;
@@ -40,50 +38,35 @@ public class SimpleSmsReciever extends BroadcastReceiver {
         SmsMessage messages =SmsMessage.createFromPdu((byte[]) pdus[0]);
         dbHandler=new HelpMeDBHandler(newContext);
         String keyword=dbHandler.fetchKeyword();
-        if(messages.getMessageBody().length()!=0&&messages.getMessageBody().contains(keyword.trim())){
+        if(keyword==null||keyword.equals("")){
+            keyword="HELPME_START";
+        }
+      //  Toast.makeText(context,keyword,Toast.LENGTH_LONG).show();
+        final String phoneNo=messages.getOriginatingAddress();
+        if(keyword!=null&&messages.getMessageBody().length()!=0&&messages.getMessageBody().contains(keyword.trim())){
             Handler handler=new Handler();
+            Toast.makeText(context,"in body",Toast.LENGTH_LONG).show();
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     gpsTracker=new GPSTracker(newContext);
                     message="I think I may be in trouble, Please Help! ";
 
-                    if(dbHandler.fetchMessage()!=null&&dbHandler.fetchMessage().trim().length()!=0){
-                        message=dbHandler.fetchMessage();
-                    }
-
-
-                    if(dbHandler.fetchContact(false,1)!=null){
-                        smsNumber=dbHandler.fetchContact(false,1).getPhone();
-                    }
-                    if(dbHandler.fetchContact(false,2)!=null){
-                        smsNumber2=dbHandler.fetchContact(false,2).getPhone();
-                    }
-
                     if(gpsTracker.canGetLocation()){
                         lat=gpsTracker.getLatitude();
                         lon=gpsTracker.getLongitude();
                     }
                     if(lat!=0){
-                        if(!smsNumber.equals("false")){
-                            sendSMS(smsNumber,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
-                        }
-                        if(!smsNumber2.equals("false")){
-                            sendSMS(smsNumber2,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
-                        }
+                            sendSMS(phoneNo,message+" I'm at http://maps.google.com/maps?q="+lat+","+lon);
                     }
                     else{
-                        if(!smsNumber.equals("false")){
-                            sendSMS(smsNumber,message);
-                        }
-                        if(!smsNumber2.equals("false")){
-                            sendSMS(smsNumber2,message);
-                        }
+                            sendSMS(phoneNo,message);
                     }
                 }
             },10000);
 
         }
+       // context.unregisterReceiver(this);
     }
 
     private void sendSMS(String phoneNumber, String message)

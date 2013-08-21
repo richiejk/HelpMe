@@ -32,26 +32,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/source/r/debug/com/android/helpme/R.java" afterPath="$PROJECT_DIR$/HelpMe/build/source/r/debug/com/android/helpme/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addtext.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addtext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_landing.xml" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_landing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_landing.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_landing.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SimpleSmsReciever.java" afterPath="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SimpleSmsReciever.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/item_dashboard_icon.xml" afterPath="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/item_dashboard_icon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_dashboard_icon.xml" afterPath="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_dashboard_icon.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelpMe.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/build.gradle" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376818601505" ignored="false" />
-    <file path="/fragment.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376943348868" ignored="false" />
-    <file path="/Dummy.txt" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377019458479" ignored="false" />
+    <file path="/fragment.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377030217956" ignored="false" />
+    <file path="/Dummy.txt" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377093787133" ignored="false" />
     <file path="/item_dashboard_icon.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377024078786" ignored="false" />
     <file path="/dimens.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376824587970" ignored="false" />
     <file path="/colors.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376857390213" ignored="false" />
-    <file path="/activity_main.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376828400894" ignored="false" />
+    <file path="/activity_main.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377095089338" ignored="false" />
     <file path="/MainActivity.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376940990538" ignored="false" />
     <file path="/CustomGridViewAdapter.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376848176250" ignored="false" />
     <file path="/activity_landing.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377023739642" ignored="false" />
@@ -87,7 +83,7 @@
     <file path="/item_desc_settings.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376943641148" ignored="false" />
     <file path="/CustomDialogSettings.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376944523679" ignored="false" />
     <file path="/GPSTracker.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1376944414469" ignored="false" />
-    <file path="/SimpleSmsReciever.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377013380932" ignored="false" />
+    <file path="/SimpleSmsReciever.java" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377098054335" ignored="false" />
     <file path="$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_addcall.xml" changelist="4f0fe05d-c6dd-4c36-8003-deef1f157cdd" time="1377023968054" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,10 +145,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_addcall.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall.xml">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="790" selection-end="1451" vertical-scroll-proportion="-12.92">
+            <state line="20" column="0" selection-start="958" selection-end="958" vertical-scroll-proportion="27.2">
               <folding />
             </state>
           </provider>
@@ -161,44 +157,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddCallActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java">
+      <file leaf-file-name="SimpleSmsReciever.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SimpleSmsReciever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="56" selection-start="3692" selection-end="3692" vertical-scroll-proportion="0.0">
+            <state line="40" column="46" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.3428899">
               <folding>
-                <element signature="e#3845#4471#0" expanded="true" />
-                <element signature="e#4460#4461#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1723#2414#0" expanded="true" />
+                <element signature="e#2399#2400#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_addtext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addtext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="47" selection-start="1371" selection-end="1389" vertical-scroll-proportion="-19.72">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddTextActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="44" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="34" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.50688076">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -221,14 +188,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addmessage_1.xml" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_safehold.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_sos_1.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_contacts_list.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_dialog.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_settings.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java" />
-        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SimpleSmsReciever.java" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_landing.xml" />
@@ -237,6 +201,9 @@
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/item_dashboard_icon.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addtext.xml" />
         <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/models/ContactModel.java" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SimpleSmsReciever.java" />
       </list>
     </option>
   </component>
@@ -413,6 +380,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelpMe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelpMe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelpMe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -430,12 +431,12 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="mediumdev" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_bigs" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -449,11 +450,11 @@
       <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\drawable-xhdpi" />
       <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\drawable-mdpi" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\layout" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.android.helpme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RjK\AndroidStudioProjects\new\HelpMe\HelpMe\src\main\res\layout" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.HelpMe-HelpMe">
@@ -618,7 +619,8 @@
       <workItem from="1376846230174" duration="1076000" />
       <workItem from="1376847716730" duration="10624000" />
       <workItem from="1376920817620" duration="23315000" />
-      <workItem from="1377005939376" duration="14032000" />
+      <workItem from="1377005939376" duration="15816000" />
+      <workItem from="1377093753197" duration="4765000" />
     </task>
     <task id="LOCAL-00001" summary="new rep">
       <created>1376847096306</created>
@@ -640,18 +642,22 @@
       <created>1377019494303</created>
       <updated>1377019494303</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="part-1 wrap up">
+      <created>1377025421297</created>
+      <updated>1377025421297</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57910000" />
+    <option name="totallyTimeSpent" value="64459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19797225" sideWeight="0.6714922" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19391026" sideWeight="0.6714922" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1923077" sideWeight="0.6714922" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3301282" sideWeight="0.6714922" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -661,13 +667,13 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6024499" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6014235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13927428" sideWeight="0.6714922" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13927428" sideWeight="0.48552337" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5144766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -718,7 +724,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="first flow finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="part-1 wrap up" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -736,45 +742,17 @@
     <MESSAGE value="part-1" />
     <MESSAGE value="part-3" />
     <MESSAGE value="first flow finished" />
+    <MESSAGE value="part-1 wrap up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="60" selection-start="2035" selection-end="2035" vertical-scroll-proportion="-23.12">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/item_desc_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="29" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.43801653">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SafeHoldActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="189" column="41" selection-start="7433" selection-end="7433" vertical-scroll-proportion="1.355286">
           <folding>
             <element signature="method#sendSMS#0;class#SafeHoldActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SimpleSmsReciever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.27383015">
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -815,24 +793,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/build/res/all/debug/layout/activity_addcall.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="50" selection-start="902" selection-end="902" vertical-scroll-proportion="0.40940368">
-          <folding />
-        </state>
+        <state line="21" column="50" selection-start="902" selection-end="902" vertical-scroll-proportion="0.40940368" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/item_dashboard_icon.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="39" selection-start="734" selection-end="734" vertical-scroll-proportion="0.3211334">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="790" selection-end="1451" vertical-scroll-proportion="-12.92">
           <folding />
         </state>
       </provider>
@@ -852,7 +818,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addtext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="47" selection-start="1371" selection-end="1389" vertical-scroll-proportion="-19.72">
+        <state line="29" column="47" selection-start="1371" selection-end="1389" vertical-scroll-proportion="0.5820543">
           <folding />
         </state>
       </provider>
@@ -862,25 +828,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddCallActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="56" selection-start="3692" selection-end="3692" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3845#4471#0" expanded="true" />
-            <element signature="e#4460#4461#0" expanded="true" />
-          </folding>
+        <state line="106" column="56" selection-start="3692" selection-end="3692" vertical-scroll-proportion="0.32712457">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/AddTextActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="44" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.0">
+        <state line="74" column="44" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.019790454">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HelpMe/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="34" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.50688076">
+        <state line="24" column="65" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.2396789">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/models/ContactModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.33944955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_addcall.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="790" selection-end="1451" vertical-scroll-proportion="0.38134593">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="958" selection-end="958" vertical-scroll-proportion="27.2">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelpMe/src/main/java/com/android/helpme/SimpleSmsReciever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="46" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.3428899">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1723#2414#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
