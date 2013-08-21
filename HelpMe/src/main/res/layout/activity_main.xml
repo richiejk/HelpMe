@@ -6,11 +6,21 @@
     android:background="@color/clouds"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_8dp"
     tools:context=".MainActivity">
-    <LinearLayout
+    <TextView
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:text="dashboard"
+            android:layout_marginBottom="@dimen/activity_8dp"
+            android:textColor="@color/peter_river"
+            android:id="@+id/txt_dashboard_title"
+            android:layout_gravity="left|center_vertical"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="wrap_content">
 
@@ -23,7 +33,7 @@
             android:background="@drawable/whitebg_curved"
             android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout">
+            android:id="@+id/linearLayoutCall">
 
         <ImageView
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -36,9 +46,12 @@
 
         <TextView
                 android:paddingLeft="@dimen/activity_8dp"
+                android:textColor="@color/dark_gray"
                 android:paddingRight="@dimen/activity_8dp"
-                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
                 android:text="Add users to be called"
+                android:lines="3"
                 android:textSize="12sp"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -51,8 +64,8 @@
             android:background="@drawable/whitebg_curved"
             android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout2"
-            android:layout_toRightOf="@+id/linearLayout">
+            android:id="@+id/linearLayoutText"
+            android:layout_toRightOf="@+id/linearLayoutCall">
 
         <ImageView
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -65,8 +78,11 @@
 
         <TextView
                 android:paddingLeft="@dimen/activity_8dp"
+                android:textColor="@color/dark_gray"
                 android:paddingRight="@dimen/activity_8dp"
-                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:lines="3"
                 android:text="Add users to be texted"
                 android:textSize="12sp"
                 android:layout_height="wrap_content"/>
@@ -78,10 +94,10 @@
             android:gravity="center_horizontal"
             android:background="@drawable/whitebg_curved"
             android:orientation="vertical"
-            android:minWidth="130dp"
+            android:minWidth="90dp"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout3"
-            android:layout_toRightOf="@+id/linearLayout2">
+            android:id="@+id/linearLayoutSOS"
+            android:layout_toRightOf="@+id/linearLayoutText">
 
         <ImageView
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -95,16 +111,41 @@
         <TextView
                 android:paddingLeft="@dimen/activity_8dp"
                 android:paddingRight="@dimen/activity_8dp"
-                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/dark_gray"
+                android:layout_width="match_parent"
                 android:text="Start SOS Alarm"
+                android:lines="3"
                 android:textSize="12sp"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:minHeight="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <Button
+                android:background="@drawable/circle"
+                android:layout_width="wrap_content"
+                android:text="start"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:minHeight="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStart"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_horizontal_margin"
             android:layout_height="wrap_content">
     <LinearLayout
@@ -112,11 +153,11 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:background="@drawable/whitebg_curved"
-            android:minWidth="120dp"
+            android:minWidth="90dp"
             android:orientation="vertical"
             android:layout_height="fill_parent"
-            android:id="@+id/linearLayout4"
-            android:layout_below="@+id/linearLayout">
+            android:id="@+id/linearLayoutSettings"
+            android:layout_below="@+id/linearLayoutCall">
 
         <ImageView
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -130,8 +171,11 @@
         <TextView
                 android:paddingLeft="@dimen/activity_8dp"
                 android:paddingRight="@dimen/activity_8dp"
-                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:lines="3"
                 android:text="Settings"
+                android:textColor="@color/dark_gray"
                 android:textSize="12sp"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -145,9 +189,9 @@
             android:layout_marginLeft="@dimen/activity_8dp"
             android:layout_marginRight="@dimen/activity_8dp"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout5"
-            android:layout_alignTop="@+id/linearLayout4"
-            android:layout_alignLeft="@+id/linearLayout2">
+            android:id="@+id/linearLayoutHelp"
+            android:layout_alignTop="@+id/linearLayoutSettings"
+            android:layout_alignLeft="@+id/linearLayoutText">
 
         <ImageView
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -155,15 +199,18 @@
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:paddingBottom="@dimen/activity_8dp"
                 android:layout_width="90dp"
-                android:src="@drawable/usercall"
+                android:src="@drawable/help"
                 android:layout_height="wrap_content"/>
 
         <TextView
                 android:paddingLeft="@dimen/activity_8dp"
                 android:paddingRight="@dimen/activity_8dp"
-                android:layout_width="wrap_content"
-                android:text="Add users to be called"
+                android:layout_width="match_parent"
+                android:text="Learn to use the app"
+                android:textColor="@color/dark_gray"
+                android:gravity="center_horizontal"
                 android:textSize="12sp"
+                android:lines="3"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
 
@@ -174,9 +221,9 @@
             android:background="@drawable/whitebg_curved"
             android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout6"
-            android:layout_alignTop="@+id/linearLayout5"
-            android:layout_toRightOf="@+id/linearLayout5">
+            android:id="@+id/linearLayoutExit"
+            android:layout_alignTop="@+id/linearLayoutHelp"
+            android:layout_toRightOf="@+id/linearLayoutHelp">
 
         <ImageView
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -184,14 +231,17 @@
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:paddingBottom="@dimen/activity_8dp"
                 android:layout_width="90dp"
-                android:src="@drawable/usercall"
+                android:src="@drawable/exit"
                 android:layout_height="wrap_content"/>
 
         <TextView
                 android:paddingLeft="@dimen/activity_8dp"
                 android:paddingRight="@dimen/activity_8dp"
-                android:layout_width="wrap_content"
-                android:text="Add users to be called"
+                android:lines="3"
+                android:textColor="@color/dark_gray"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:text="Exit the application"
                 android:textSize="12sp"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
