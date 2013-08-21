@@ -29,7 +29,7 @@
                 android:textSize="22sp"
                 android:layout_margin="@dimen/activity_8dp"
                 android:background="@color/peter_river"
-                android:text="double tap for cancel"
+                android:text="double tap here to cancel"
                 android:layout_height="wrap_content"
                 android:id="@+id/tapButton"/>
 
