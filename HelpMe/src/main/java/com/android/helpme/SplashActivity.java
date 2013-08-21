@@ -43,7 +43,7 @@ public class SplashActivity extends Activity {
 					  Called after splash times up.
 					  Here we moved to another main activity class*/
 
-                    Intent intentSearch = new Intent(SplashActivity.this, MainActivity.class);
+                    Intent intentSearch = new Intent(SplashActivity.this, MainActivityNew.class);
                     intentSearch.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intentSearch);
                     finish();
